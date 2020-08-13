@@ -1,0 +1,25 @@
+.btn {
+    background-color: var(--color-red);
+    color: var(--color-text);
+    padding: 0.8rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    outline-style: none;
+    border: none;
+
+    &--large {
+        width: 25rem;
+        height: 6rem;
+        font-size: 3.5rem;
+
+        @media only screen and (max-width: 600px) {
+            width: 20rem;
+        }
+    }
+
+    &--small {
+        border-radius: 5px;
+        padding: 1rem 2.5rem;
+        font-size: 1.5rem;
+    }
+}

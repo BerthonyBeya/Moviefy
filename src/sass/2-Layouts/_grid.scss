@@ -1,0 +1,61 @@
+.grid {
+    margin: auto;
+    padding: 5rem 5rem;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+
+    @include respond(small-phone) {
+        grid-template-columns: none;
+        width: 100%;
+    }
+
+    @include respond(phone) {
+        grid-template-columns: none;
+        width: 100%;
+    }
+
+    @include respond(tab-port) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include respond(tab-land) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include respond(big-desktop) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .movie {
+        background-color: var(--color-background-overlay);
+        padding-bottom: 2rem;
+        border-radius: 3rem;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &__image {
+            height: 20rem;
+            width: 100%;
+            border-radius: 3rem;
+        }
+
+        &__title {
+            padding: 2rem;
+            text-align: center;
+            line-height: 3rem;
+            font-weight: 200;
+        }
+
+        &__details {
+            padding: 0.8rem 1rem;
+            background-color: var(--color-red);
+            font-size: 1.5rem;
+            border-radius: 5px;
+        }
+    }
+}

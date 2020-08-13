@@ -1,0 +1,50 @@
+.movie-details-container {
+    padding: 5rem;
+    margin: auto;
+}
+
+.details-container {
+    display: flex;
+
+    @include respond(small-phone) {
+        flex-direction: column;
+    }
+
+    @include respond(phone) {
+        flex-direction: column;
+    }
+
+    @include respond(tab-port) {
+        flex-direction: column;
+    }
+
+    .details__image {
+        width: 60%;
+        height: 60rem;
+
+        @include respond(small-phone) {
+            width: 100%;
+        }
+
+        @include respond(phone) {
+            width: 100%;
+        }
+
+        @include respond(tab-port) {
+            width: 100%;
+        }
+    }
+
+    .details-small-container {
+        padding: 2rem 4rem;
+        background-color: var(--color-background-overlay);
+        width: 100%;
+        min-height: 60rem;
+    }
+}
+
+.plot-box {
+    padding: 4rem;
+    margin-top: 1rem;
+    background-color: var(--color-background-overlay);
+}

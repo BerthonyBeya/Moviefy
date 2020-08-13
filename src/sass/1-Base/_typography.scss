@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+}
+
+.main__large-font {
+    font-size: 5rem;
+    padding-bottom: 2rem;
+    line-height: 6rem;
+}
+
+.main__small-font {
+    font-size: 3rem;
+    padding-bottom: 3.5rem;
+}
+
+.details {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-weight: 400;
+
+    & > span {
+        color: var(--color-red);
+        font-size: 1.8rem;
+    }
+}
+
+.details__title {
+    font-size: 3rem;
+    font-weight: 400;
+    padding-bottom: 3rem;
+}
+
+
+.plot-font {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    color: var(--color-red);
+}
+
+.plot-paragraph {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 400;
+    padding-bottom: 4rem;
+}

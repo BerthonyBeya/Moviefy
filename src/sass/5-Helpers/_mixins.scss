@@ -1,0 +1,53 @@
+//MEDIA QUERY MANAGER
+
+/* 
+0 - 480      small phone    
+480 - 600:     Phone
+600 - 900:   Tablet Portrait
+900 - 1200:  Tablet Landscape
+1200 - 1800: is where Normal styles apply
+1800 + :     Big Desktop
+*/
+
+/* 
+$Breakpoints
+- small-phone
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == small-phone {
+        @media (max-width: 30em) {
+            // 480px
+            @content;
+        }
+    }
+
+    @if $breakpoint == phone {
+        @media (min-width: 30em) and (max-width: 37.5em) {
+            // 480px -> 600px
+            @content;
+        }
+    }
+    @if $breakpoint == tab-port {
+        @media (min-width: 37.5em) and (max-width: 56.25em) {
+            //600px -> 900px
+            @content;
+        }
+    }
+    @if $breakpoint == tab-land {
+        @media (min-width: 56.25em) and (max-width: 75em) {
+            //900px -> 1200px
+            @content;
+        }
+    }
+    @if $breakpoint == big-desktop {
+        @media (min-width: 112.5em) {
+            //min 1800px
+            @content;
+        }
+    }
+}

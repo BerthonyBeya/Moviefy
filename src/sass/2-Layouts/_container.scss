@@ -1,0 +1,37 @@
+.container {
+    height: 80vh;
+
+    @include respond(small-phone) {
+        line-height: 5rem;
+    }
+
+    @include respond(phone) {
+        line-height: 5rem;
+    }
+
+    @include respond(tab-port) {
+        line-height: 5rem;
+    }
+
+    @include respond(tab-land) {
+        line-height: 5rem;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .main__fonts-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .developer {
+       font-size: 1.1rem;
+       font-family: Arial, Helvetica, sans-serif;
+       font-style: italic;
+    }
+}

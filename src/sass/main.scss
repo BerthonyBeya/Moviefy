@@ -1,0 +1,23 @@
+/****************************************/
+// IMPORTING ALL THE SASS PARTIALS
+/****************************************/
+
+//1-BASE//
+@import "./1-Base/reset";
+@import "./1-Base/typography";
+
+//2-LAYOUT//
+@import "./2-Layouts/container";
+@import "./2-Layouts/grid";
+@import "./2-Layouts/movie-details-container";
+@import "./2-Layouts/header";
+
+//3-COMPONENTS//
+@import "./3-Components/button";
+@import "./3-Components/form";
+@import "./3-Components/images";
+@import "./3-Components/spinner";
+
+//5-HELPERS//
+@import "./5-Helpers/mixins";
+@import "./5-Helpers/variables";

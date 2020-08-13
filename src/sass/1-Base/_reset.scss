@@ -1,0 +1,44 @@
+// This is a reset for my entire site //
+@import "/src/sass/5-Helpers/mixins";
+
+*,
+::after,
+::before {
+   margin: 0;
+   margin: 0;
+   box-sizing: inherit;
+}
+
+html {
+   font-size: 62.5%; // 10px
+   box-sizing: border-box;
+
+   @include respond(small-phone) {
+      font-size: 31.25%; //5px
+   }
+
+   @include respond(phone) {
+      font-size: 37.5%; //6px
+   }
+
+   @include respond(tab-port) {
+      font-size: 50%; //8px
+   }
+
+   @include respond(tab-land) {
+      font-size: 56.25%; //9px
+   }
+}
+
+body {
+   background-image: linear-gradient(to left, var(--color-background-overlay), var(--color-background-overlay)),
+      url("/images/Background.jpg");
+   background-size: cover;
+   color: var(--color-text);
+   line-height: 3rem;
+   
+   a {
+      color: var(--color-text);
+      text-decoration: none;
+   }
+}
